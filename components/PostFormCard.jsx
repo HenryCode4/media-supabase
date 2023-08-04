@@ -2,13 +2,17 @@ import Image from "next/image";
 import React from "react";
 import Card from "./Card";
 import Avatar from "./Avatar";
+import Link from "next/link";
 
-const PostForm = () => {
+const PostFormCard = () => {
   return (
     <Card>
       <div className="flex gap-2">
         <div>
-          <Avatar />
+        <Link href="/profile">
+        <Avatar />
+        </Link>
+          
         </div>
         <textarea className="grow p-3 h-14" placeholder={"Whats on your mind"} />
       </div>
@@ -47,4 +51,4 @@ const PostForm = () => {
   );
 };
 
-export default PostForm;
+export default PostFormCard;
